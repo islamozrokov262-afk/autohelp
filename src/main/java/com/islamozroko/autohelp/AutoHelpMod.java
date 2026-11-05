@@ -39,7 +39,7 @@ public class AutoHelpMod implements ClientModInitializer {
                     int y = (int) player.getY();
                     int z = (int) player.getZ();
                     
-                    String msg = String.format("!хелп на [%d, %d, %d]", x, y, z);
+                    String msg = String.format("!хелп на %d, %d, %d", x, y, z);
                     
                     if (client.player.connection != null) {
                         client.player.connection.sendChat(msg);
